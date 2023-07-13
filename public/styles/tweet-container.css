@@ -1,0 +1,33 @@
+.tweet-container header {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+article.tweet {
+  border: solid black;
+  padding: 20px;
+}
+
+.tweet-header {
+  display: flex;
+}
+
+.tweet-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tweet-text {
+  border-bottom: 3px solid black;
+}
+
+.tweet-footer i:hover {
+  color: yellow;
+}
+
+.tweet-container:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+

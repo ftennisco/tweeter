@@ -1,4 +1,4 @@
-header {
+header.tweeter-head {
   height: 720px;
   width: 100%;
   display: flex;
@@ -10,14 +10,14 @@ header {
   background-size: cover;
 }
 
-header .avatar {
+header.tweet-head .avatar {
   width: 150px;
   height: 150px;
   border-radius: 50%;
   background-color: blanchedalmond;
 }
 
-header .name {
+header.tweet-head .name {
   font-family: 'Source Sans 3', sans-serif;
   font-size: 24px;
   font-weight: bold;
