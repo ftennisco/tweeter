@@ -30,4 +30,7 @@ article.tweet {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+.tweet-container h3.username {
+  opacity: 0.5;
+}
 
