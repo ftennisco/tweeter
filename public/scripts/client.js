@@ -47,7 +47,7 @@ $(document).ready(function () {
       </div>
       <h3 class="username">${tweet.user.handle}</h3>
     </header>
-    <p class="tweet-text">${tweet.content.text}</p>
+    <p class="tweet-text"></p>
     <footer class="tweet-footer">
     <span> ${timeago.format(tweet.created_at)} </span>
       <div>
@@ -58,7 +58,8 @@ $(document).ready(function () {
     </footer>
   </article>
 `);
-
+$tweet.find('.tweet-text').text(tweet.content.text);
+  
     // Return the tweet element
     return $tweet;
   }
@@ -89,6 +90,4 @@ $(document).ready(function () {
   }
 
   loadTweets();
-
-  
 });
