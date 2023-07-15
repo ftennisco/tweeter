@@ -31,6 +31,7 @@
   <link rel="stylesheet" href="/styles/header.css" type="text/css" />
 
   <!-- External JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
   <!-- App JS -->
@@ -77,30 +78,6 @@
       </section>
     </section>
   </main>
-  <script>
-    $(document).ready(function() {
-      $('form').submit(function(event) {
-        event.preventDefault(); // Prevent default form submission behavior
-      
-        const formData = $(this).serialize(); // Serialize the form data
-
-        // Send the serialized data to the server
-        $.ajax({
-          url: '/tweets', // Specify the URL to the send the request
-          method: 'POST', // Specify the HTTP method
-          data: formData, // Pass the serialized form data
-          success: function(response) {
-            // Handle the successful response from the server
-            console.log(response);
-          },
-          error: function(xhr, status, error) {
-            // Handle any errors that occurred during the request
-            console.log(error);
-          }
-        });
-      });
-    });
-  </script>
 </body>
 
 </html>
