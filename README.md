@@ -21,4 +21,6 @@ This project uses jQuery, HTML5, and CSS3 that helps students like myself get co
 ## Dependencies
 
 - Express
+- Body-parser
+- Chance
 - Node 5.10.x or above
