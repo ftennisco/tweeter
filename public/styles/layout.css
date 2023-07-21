@@ -30,8 +30,41 @@ body {
 }
 
 main {
-  width: 90%;
+  /* width: 90%; */
   margin: 0 auto;
   text-align: center;
   background-color: #f4f1ec;
+  padding-top: 120px;
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  main {
+    /* width: 45%; */
+    float: right;
+  }
+  .pageContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+
+.submit {
+  display: flex;
+  justify-content: space-between;
+}
+
+.submit button {
+  font-family: 'Bungee', cursive;
+  background-color: blue;
+  color: white;
+}
+
+.submit .counter {
+  font-family: 'Bungee', cursive;
 }

@@ -52,3 +52,20 @@
 .new-tweet .counter.invalid {
   color: red;
 }
+
+.new-tweet #error-message {
+  background-color: #ff9999;
+  color: #cc0000;
+  padding: 10px;
+  border: 1px solid #cc0000;
+  border-radius: 4px;
+  margin-top: 10px;
+  display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+  .new-tweet {
+    float: right;
+    /* width: 100%; */
+  }
+}

@@ -34,3 +34,15 @@ article.tweet {
   opacity: 0.5;
 }
 
+@media only screen and (min-width: 1024px) {
+  .tweet-container {
+     width: 100%;
+     margin-top: 6em;
+  }
+  .section {
+    width: 100%;
+  }
+ 
+
+}
+

@@ -10,15 +10,21 @@ $(document).ready(function () {
     const $form = $(this);
     const formData = $form.serialize();
 
+    $('#error-message').slideUp();
+
     // Perform form data validation
     const tweetText = $form.find('#tweet-text').val();
     if (!tweetText) {
-      alert('Error: Tweet content cannot be empty.'); // Display error message for empty tweet
-      return false; // Exit the submit handler without submitting the form
+      const $errorMessage = $('#error-message');
+      $errorMessage.text('Error: Tweet content cannot be empty.');
+      $errorMessage.slideDown();
+      return false;
     }
     if (tweetText.length > 140) {
-      alert('Error: Tweet content exceeds 140 chatacters.'); // Display error message for exceeding character limit
-      return false; // Exit the submit handler without submitting the form
+      const $errorMessage = $('#error-message');
+      $errorMessage.text('Error: Tweet content exceeds 140 characters.');
+      $errorMessage.slideDown();
+      return false;
     }
 
     // Send the serialized data to the server
@@ -29,6 +35,8 @@ $(document).ready(function () {
       success: function (response) {
         console.log(response);
         loadTweets();
+
+        $form.find('#tweet-text').val('');
       },
       error: function (xhr, status, error) {
         console.log(error);
