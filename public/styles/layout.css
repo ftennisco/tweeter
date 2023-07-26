@@ -19,6 +19,7 @@ body {
   background-color: #f4f1ec;
   font-size: 24px;
   font-family: 'Source Sans 3', sans-serif;
+  margin: 0;
 }
 
 /*
@@ -41,15 +42,19 @@ main {
   body {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
   }
   main {
-    float: right;
+    width: 100%;
   }
   .pageContainer {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    width: 100%;
+    max-width: 1400px; /* Set a maximum width for the content to avoid excessive stretching */
+    margin: 0 auto; /* Center the content within the available space */
+    padding: 0 1em; /* Add padding to create some space between the content and the screen edge */
   }
 }
 

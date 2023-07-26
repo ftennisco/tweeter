@@ -7,6 +7,11 @@
 article.tweet {
   border: solid black;
   padding: 20px;
+  transition: box-shadow 0.3s;
+}
+
+article.tweet:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .tweet-header {
@@ -26,23 +31,17 @@ article.tweet {
   color: yellow;
 }
 
-.tweet-container:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
 .tweet-container h3.username {
   opacity: 0.5;
 }
 
 @media only screen and (min-width: 1024px) {
   .tweet-container {
-     width: 100%;
-     margin-top: 6em;
+     max-width: 600px;
+     margin: 6em auto 0;
   }
   .section {
     width: 100%;
   }
- 
-
 }
 

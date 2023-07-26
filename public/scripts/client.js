@@ -13,7 +13,7 @@ $(document).ready(function () {
     $('#error-message').slideUp();
 
     // Perform form data validation
-    const tweetText = $form.find('#tweet-text').val();
+    const tweetText = $form.find('#tweet-text').val().trim();
     if (!tweetText) {
       const $errorMessage = $('#error-message');
       $errorMessage.text('Error: Tweet content cannot be empty.');
@@ -33,7 +33,6 @@ $(document).ready(function () {
       method: 'POST',
       data: formData,
       success: function (response) {
-        console.log(response);
         loadTweets();
 
         $form.find('#tweet-text').val('');
@@ -88,7 +87,6 @@ $tweet.find('.tweet-text').text(tweet.content.text);
       method: 'GET',
       dataType: 'json',
       success: function (response) {
-        console.log(response);
         renderTweets(response); // Call the renderTweets function with the received tweets
       },
       error: function (xhr, status, error) {
