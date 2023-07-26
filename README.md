@@ -6,9 +6,8 @@ This project uses jQuery, HTML5, and CSS3 that helps students like myself get co
 
 ## Screenshots
 
-!["Screenshot of tweets with greater than 1024px"](https://github.com/ftennisco/tweeter/blob/master/docs/D&Dtweet-box.png?raw=true)
-!["Screenshot of tweets compose box."](https://github.com/ftennisco/tweeter/blob/master/docs/tweet-box1024px.png?raw=true)
-!["Screenshot of compose box with less than 1024px"](https://github.com/ftennisco/tweeter/blob/master/docs/singleColumnTweetBox.png?raw=true)
+!["Screenshot of tweets with greater than 1024px"](https://github.com/ftennisco/tweeter/blob/master/docs/desktop.png?raw=true)
+!["Screenshot of compose box with less than 1024px"](https://github.com/ftennisco/tweeter/blob/master/docs/mobile.png?raw=true)
 
 ## Getting Started
 
