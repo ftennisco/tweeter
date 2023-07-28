@@ -33,9 +33,7 @@ body {
 main {
   width: 90%;
   margin: 0 auto;
-  text-align: center;
   background-color: #f4f1ec;
-  padding-top: 120px;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -46,6 +44,7 @@ main {
   }
   main {
     width: 100%;
+    padding-top: 120px;
   }
   .pageContainer {
     display: flex;
@@ -67,6 +66,7 @@ main {
   font-family: 'Bungee', cursive;
   background-color: blue;
   color: white;
+  margin-top: 20px;
 }
 
 .submit .counter {

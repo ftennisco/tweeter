@@ -8,6 +8,7 @@ article.tweet {
   border: solid black;
   padding: 20px;
   transition: box-shadow 0.3s;
+  margin-bottom: 20px;
 }
 
 article.tweet:hover {
@@ -25,6 +26,7 @@ article.tweet:hover {
 
 .tweet-text {
   border-bottom: 3px solid black;
+  word-break: break-all;
 }
 
 .tweet-footer i:hover {
@@ -35,10 +37,14 @@ article.tweet:hover {
   opacity: 0.5;
 }
 
+.tweet-container {
+  margin-top: 20px;
+}
+
 @media only screen and (min-width: 1024px) {
   .tweet-container {
      max-width: 600px;
-     margin: 6em auto 0;
+     margin: 40px auto 0;
   }
   .section {
     width: 100%;
